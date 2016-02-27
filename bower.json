@@ -1,0 +1,34 @@
+{
+  "name": "adminr-md-layout",
+  "authors": [
+    "jakubknejzlik <jakub.knejzlik@gmail.com>"
+  ],
+  "description": "adminr Material Design layout module",
+  "main": [
+    "dist/index.js",
+    "dist/styles.css"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "adminr",
+    "material design",
+    "angular",
+    "layout"
+  ],
+  "license": "MIT",
+  "homepage": "www.knejzlik.cz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "example"
+  ],
+  "dependencies": {
+    "adminr-basic-layout": "^0.1.0",
+    "angular-material": "^1.0.5",
+    "adminr-core": "^0.0.8",
+    "angular-material-icons": "^0.6.0"
+  }
+}
