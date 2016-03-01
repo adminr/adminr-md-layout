@@ -1,4 +1,4 @@
-mod = angular.module('adminr-md-layout',['adminr-basic-layout','adminr-core','ngMaterial','ngMdIcons'])
+mod = angular.module('adminr-md-layout',['adminr-basic-layout','adminr-core','ngMaterial'])
 
 
 require('./components/layout.coffee')
