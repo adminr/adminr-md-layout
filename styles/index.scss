@@ -1,1 +1,27 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+ul.sidenav {
+  padding-left: 0;
+}
+
+ul.sidenav a {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: .010em;
+  border-radius: 0;
+  color: black;
+  cursor: pointer;
+  display: block;
+  line-height: 50px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px 16px;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  width: 100%;
+}
+ul.sidenav li.active {
+  background-color: rgba(0,0,0,0.1);
+}

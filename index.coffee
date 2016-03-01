@@ -5,12 +5,15 @@ require('./components/layout.coffee')
 
 mod.run(['$templateCache',($templateCache)->
   $templateCache.put('adminr-md-layout',require('./views/layout.html'))
+  $templateCache.put('adminr-md-layout-side-menu',require('./views/side-menu.html'))
 ])
 
 
-mod.provider('AdminrMdLayout',['AdminrContainerManagerProvider',(AdminrContainerManagerProvider)->
+mod.provider('AdminrMdLayout',['AdminrContainerManagerProvider','AdminrBasicLayoutProvider',(AdminrContainerManagerProvider,AdminrBasicLayoutProvider)->
 
   class AdminrMdLayoutStructure
+
+    sidemenu: AdminrBasicLayoutProvider
 
     brandTitle: null
 
@@ -26,6 +29,3 @@ mod.provider('AdminrMdLayout',['AdminrContainerManagerProvider',(AdminrContainer
 
   return new AdminrMdLayoutStructure()
 ])
-#mod.controller('SBAdminCtrl',['$scope','$state','AdminrSBAdmin',($scope,$state,AdminrSBAdmin)->
-#  $scope.brandTitle = AdminrSBAdmin.brandTitle
-#])

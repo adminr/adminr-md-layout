@@ -1,0 +1,13 @@
+<ul class="sidenav">
+    <li ng-class="{active:$homePage === $page}" layout="row" layout-fill>
+        <a ui-sref="{{$homePage.stateName}}" ng-click="toggleLeft()" flex layout-fill>
+            <i class="mdi mdi-{{$homePage.getIcon()}} mdi-18px"></i>
+            {{$homePage.name}}
+        </a>
+    </li>
+    <li ng-repeat="page in $homePage.children" ng-class="{active:page === $page}" layout="row">
+        <a ui-sref="{{page.stateName}}" ng-click="toggleLeft()" flex>
+            <i class="mdi mdi-{{page.getIcon()}} mdi-18px"></i> {{page.name}}
+        </a>
+    </li>
+</ul>
