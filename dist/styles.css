@@ -8,21 +8,29 @@ ul.sidenav a {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   letter-spacing: .010em;
   border-radius: 0;
-  color: black;
+  color: rgba(0, 0, 0, 0.54);
   cursor: pointer;
   display: block;
-  line-height: 50px;
+  line-height: 45px;
   margin: 0;
   overflow: hidden;
   padding: 0px 16px;
   text-align: left;
   text-decoration: none;
   white-space: normal;
-  width: 100%; }
+  width: 100%;
+  outline: none; }
 
-ul.sidenav li.active {
+ul.sidenav a:focus {
+  text-decoration: underline; }
+
+ul.sidenav a i {
+  margin-right: 10px; }
+
+ul.sidenav li.active, ul.sidenav li.active a {
+  color: rgba(0, 0, 0, 0.8);
   background-color: rgba(0, 0, 0, 0.1); }
 
 .layout-content {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(0, 0, 0, 0.03); }
 
