@@ -1,10 +1,10 @@
 <ul class="sidenav">
-    <li ng-class="{active:$homePage === $page}" layout="row">
+    <li ng-class="{active:$homePage.isCurrent($page)}" layout="row">
         <md-button ui-sref="{{$homePage.stateName}}" ng-click="toggleLeft()" flex>
             <i class="mdi mdi-{{$homePage.getIcon()}} mdi-18px"></i>{{$homePage.name}}
         </md-button>
     </li>
-    <li ng-repeat="page in $homePage.children" ng-class="{active:page === $page}" layout="row">
+    <li ng-repeat="page in $rootPage.children" ng-class="{active:page.isCurrent($page)}" layout="row">
         <md-button ui-sref="{{page.stateName}}" ng-click="toggleLeft()" flex>
             <i class="mdi mdi-{{page.getIcon()}} mdi-18px"></i>{{page.name}}
         </md-button>
