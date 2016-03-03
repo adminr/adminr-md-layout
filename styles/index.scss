@@ -4,11 +4,12 @@ ul.sidenav {
   padding-left: 0;
 }
 
-ul.sidenav a {
+ul.sidenav .md-button {
   font-weight: 500;
   font-size: 15px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   letter-spacing: .010em;
+  text-transform: none;
   border-radius: 0;
   color: rgba(0,0,0,.54);
   cursor: pointer;
@@ -23,15 +24,15 @@ ul.sidenav a {
   width: 100%;
   outline: none;
 }
-ul.sidenav a:focus {
-  text-decoration: underline;
+ul.sidenav .md-button:focus {
+  background: transparent;
 }
-ul.sidenav a i {
+ul.sidenav .md-button i {
   margin-right: 10px;
 }
-ul.sidenav li.active,ul.sidenav li.active a {
+ul.sidenav li.active,ul.sidenav li.active .md-button {
   color: rgba(0,0,0,0.8);
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.06);
 }
 
 .layout-content {
