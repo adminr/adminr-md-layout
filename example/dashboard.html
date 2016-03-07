@@ -1,4 +1,6 @@
-<md-card>
-    <h3 class="md-headline">Welcome</h3>
-    page: {{$page.name}}
-</md-card>
+<div ng-controller="TestCtrl">
+    <md-card ng-repeat="row in array">
+        <h3 class="md-headline">Welcome</h3>
+        page: {{$page.name}}
+    </md-card>
+</div>

@@ -12,3 +12,14 @@ mod.config(function(AdminrMdLayoutProvider) {
         .addPage('userDetail','User detail',{url:'/users/:id',templateUrl:'user-detail.html'})
     AdminrMdLayoutProvider.sidemenu.addPage('table-panel', 'Table panel', {url:'/table-panel', templateUrl:'table-panel.html'}).setIcon('account-multiple')
 })
+
+mod.controller('TestCtrl',function($scope,$timeout){
+    $scope.array = [];
+
+    $timeout(function(){
+        for(var i = 0;i < 100;i++){
+            $scope.array.push(i);
+        }
+    },1000);
+
+})
