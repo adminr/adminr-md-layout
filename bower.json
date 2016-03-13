@@ -28,7 +28,7 @@
   "dependencies": {
     "adminr-basic-layout": "^0.2.0",
     "angular-material": "^1.0.5",
-    "adminr-core": "^0.0.8",
+    "adminr-core": "^0.0.9",
     "mdi": "^1.4.57"
   }
 }
